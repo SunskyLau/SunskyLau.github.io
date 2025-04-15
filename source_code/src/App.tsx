@@ -3,14 +3,19 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import MainContent from "./components/MainContent";
 import NewsPanel from "./components/NewsPanel";
+import NavigationPanel from "./components/NavigationPanel";
 
 export default function App() {
-  return <div id="App">
-    <MainContent />
-    <NewsPanel />
-  </div>;
+  return (
+    <>
+      <NavigationPanel />
+      <div id="App">
+        <MainContent />
+        <NewsPanel />
+      </div>
+    </>
+  );
 }
-
 
 // // 示例论文数据
 // const publications = [
