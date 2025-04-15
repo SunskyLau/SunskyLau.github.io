@@ -1,6 +1,8 @@
 [
   {
-    "time":"2024-06",
-    "content": "Our paper RidgeBuilder has been accpeted!"
-  }
+    "date": "June 16, 2023",
+    "content": "I graduated from Hunan University!"
+  },
+  { "date": "July 20, 2023", "content": "I joined ZJUIDG in Zhejiang University!" },
+  { "date": "Jan, 2025", "content": "Our paper RidgeBuilder has been accepted by CHI2025!" }
 ]

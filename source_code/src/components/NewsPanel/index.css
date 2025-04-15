@@ -1,0 +1,13 @@
+#news-panel {
+  position: relative;
+  /* background-color: black; */
+  width: 300px; /* 设置一个固定宽度 */
+  height: auto; /* 高度由内容决定 */
+  flex-shrink: 0;
+  /* 防止压缩 */
+  min-height: 100vh;
+}
+
+.news-item {
+  margin: 0 0 15px 0;
+}

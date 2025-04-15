@@ -14,264 +14,29 @@ body {
 
 /* 主容器样式 */
 #App {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: white;
-  min-height: 100vh;
-  position: relative;
-}
-
-/* 主内容和侧边栏布局 */
-.main-content-wrapper {
-  margin: 20px auto;
-  max-width: 1200px;
-}
-
-.main-content {
-  width: 100%;
-  min-width: 0;
-}
-
-.news-sidebar {
-  width: 300px;
-  padding: 20px;
-  background-color: #f8f8f8;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
   height: fit-content;
-  position: fixed;
-  right: 20px;
-  top: 20px;
-  z-index: 100;
-}
-
-/* 导航栏样式 */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.navbar-left {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.navbar-right {
-  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   gap: 20px;
+  align-items: flex-start; /* 让子元素从顶部开始，不会跟随其他元素的高度 */
 }
 
-.navbar-right a {
-  text-decoration: none;
-  color: #666;
-  transition: color 0.3s;
+.text {
+  flex: 1; /* 让文本占据剩余空间 */
+  font-size: 16px;
+  line-height: 1.2;
 }
 
-.navbar-right a:hover {
-  color: #000;
-}
-
-/* 个人信息区域样式 */
-.profile-section {
-  display: flex;
-  margin: 40px 0;
-  gap: 30px;
-}
-
-.profile-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.profile-info {
-  flex: 1;
-}
-
-.profile-name {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.profile-title {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.profile-bio {
-  margin-bottom: 20px;
-  line-height: 1.8;
-}
-
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.contact-item a {
-  text-decoration: none;
-  color: #0066cc;
-}
-
-/* 论文发表区域样式 */
-.publications-section {
-  margin: 40px 0;
-}
-
-.section-title {
-  font-size: 24px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #eee;
-}
-
-.publication-item {
-  margin-bottom: 25px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #eee;
-}
-
-.publication-title {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.publication-authors {
-  font-style: italic;
-  margin-bottom: 10px;
-  color: #555;
-}
-
-.publication-venue {
-  margin-bottom: 10px;
-  color: #666;
-}
-
-.publication-links {
-  display: flex;
-  gap: 15px;
-}
-
-.publication-links a {
-  text-decoration: none;
-  color: #0066cc;
+.date{
   font-size: 14px;
 }
 
-/* 新闻侧边栏样式 */
-.news-item {
-  margin-bottom: 20px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #eee;
-}
-
-.news-date {
+.title{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  margin-bottom: 5px;
-  color: #555;
-}
-
-.news-content {
-  line-height: 1.8;
-}
-
-/* 响应式设计 */
-@media (max-width: 1024px) {
-  #App {
-    max-width: 100%;
-    margin-right: 340px;
-  }
-
-  .main-content-wrapper {
-    margin: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  #App {
-    margin-right: 0;
-    padding: 15px;
-  }
-
-  .news-sidebar {
-    position: static;
-    width: 100%;
-    margin: 20px auto;
-    max-width: 1200px;
-  }
-
-  .profile-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .profile-image {
-    width: 150px;
-    height: 150px;
-  }
-
-  .contact-info {
-    justify-content: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
-
-  .navbar-right {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 480px) {
-  .profile-image {
-    width: 120px;
-    height: 120px;
-  }
-
-  .profile-name {
-    font-size: 24px;
-  }
-
-  .profile-title {
-    font-size: 16px;
-  }
-
-  .section-title {
-    font-size: 20px;
-  }
-
-  .publication-title {
-    font-size: 16px;
-  }
-
-  .navbar-left {
-    font-size: 20px;
-  }
-
-  .navbar-right {
-    gap: 10px;
-  }
-
-  .navbar-right a {
-    font-size: 14px;
-  }
 }

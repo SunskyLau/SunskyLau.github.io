@@ -1,0 +1,11 @@
+{
+  "name": "Yangtian Liu",
+  "title": "2nd-year Phd Student",
+  "bio": "这里是个人简介。你可以在这里介绍自己的研究方向、教育背景、工作经历等信息。这是一个可以自由填写的区域，你可以根据自己的需求进行修改。",
+  "image": "/sun.png",
+  "contacts": [
+    { "type": "Email", "value": "your.email@example.com", "link": "mailto:your.email@example.com" },
+    { "type": "Google Scholar", "value": "Google Scholar", "link": "https://scholar.google.com" },
+    { "type": "GitHub", "value": "GitHub", "link": "https://github.com" }
+  ]
+}
