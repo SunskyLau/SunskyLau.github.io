@@ -1,8 +1,12 @@
 {
   "person": {
     "shliu": {
-      "site": "",
+      "site": "https://susicaliu.github.io/",
       "name": "Shuhan Liu"
+    },
+    "ytliu": {
+      "site": "",
+      "name": "Yangtian Liu"
     }
   }
 }
