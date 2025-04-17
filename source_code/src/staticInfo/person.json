@@ -1,12 +1,34 @@
 {
-  "person": {
-    "shliu": {
-      "site": "https://susicaliu.github.io/",
-      "name": "Shuhan Liu"
-    },
-    "ytliu": {
-      "site": "",
-      "name": "Yangtian Liu"
-    }
+  "shliu": {
+    "site": "https://susicaliu.github.io/",
+    "name": "Shuhan Liu"
+  },
+  "ytliu": {
+    "site": "",
+    "name": "Yangtian Liu"
+  },
+  "jxli": {
+    "site": "",
+    "name": "Junxin Li"
+  },
+  "ywhuang": {
+    "site": "https://yhuang.top/",
+    "name": "Yanwei Huang"
+  },
+  "yshangguan": {
+    "site": "",
+    "name": "Yue Shangguan"
+  },
+  "zkdeng": {
+    "site": "",
+    "name": "Zikun Deng"
+  },
+  "dweng": {
+    "site": "https://dwe.ng/en/about/",
+    "name": "Di Weng"
+  },
+  "ycwu": {
+    "site": "http://www.ycwu.org/",
+    "name": "Yingcai Wu"
   }
 }
