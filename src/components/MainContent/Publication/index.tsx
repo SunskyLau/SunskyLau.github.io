@@ -12,7 +12,7 @@ function Publication() {
           </div>
           <div className="publication-info">
             <strong>RidgeBuilder: Interactive Authoring of Expressive Ridgeline Plots.</strong> <Author id="shliu" />, <Author id="ytliu" />,{" "}
-            <Author id="jxli" />, <Author id="ywhuang" />, <Author id="yshangguan" />, <Author id="dweng" />, <Author id="ycwu" />.{" "}
+            <Author id="jxli" />, <Author id="ywhuang" />, <Author id="yshangguan" />, <Author id="zkdeng"/>, <Author id="dweng" />, <Author id="ycwu" />.{" "}
             <Academy id="chi" year={2025} />
           </div>
         </div>
