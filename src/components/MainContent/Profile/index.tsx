@@ -11,7 +11,9 @@ function Profile() {
         <br />
         My research interests mainly focus on interactive time series analytics.
       </div>
-      <div id="avatar"></div>
+      <div id="avatar">
+        <img src="/avatar.jpg" alt="Profile" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      </div>
     </div>
   );
 }
