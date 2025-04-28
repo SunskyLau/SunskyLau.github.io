@@ -37,9 +37,9 @@
 }
 
 /* ======================
-   移动设备布局 (≤ 900px)
+   移动设备布局 (≤ 1000px)
 ====================== */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   /* 新闻面板 */
   #news-panel {
     width: 100%;

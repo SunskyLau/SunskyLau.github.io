@@ -8,16 +8,16 @@ import { useState, useEffect } from "react";
 
 /**
  * 主应用组件 - 负责整体页面布局和响应式设计
- * 根据屏幕宽度自动切换桌面版和移动版布局，900px为分界点
+ * 根据屏幕宽度自动切换桌面版和移动版布局，1000px为分界点
  */
 export default function App() {
   // 跟踪当前是否为移动设备视图
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
 
   // 监听窗口大小变化，更新移动设备状态
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 900);
+      setIsMobile(window.innerWidth <= 1000);
     };
 
     window.addEventListener("resize", handleResize);

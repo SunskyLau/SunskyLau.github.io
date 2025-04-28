@@ -79,9 +79,9 @@ body {
 }
 
 /* ======================
-   移动设备布局 (≤ 900px)
+   移动设备布局 (≤ 1000px)
 ====================== */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   /* 主容器样式 */
   #App {
     flex-direction: column;
