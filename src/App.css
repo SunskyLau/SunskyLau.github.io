@@ -1,4 +1,6 @@
-/* 全局样式 */
+/* ======================
+   全局基础样式
+====================== */
 * {
   margin: 0;
   padding: 0;
@@ -14,100 +16,27 @@ body {
   overflow-x: hidden;
 }
 
-/* 主容器样式 */
+/* ======================
+   主要布局容器
+====================== */
 #App {
   display: flex;
   flex-direction: row;
   width: fit-content;
   max-width: 100%;
-  height: fit-content;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  gap: 20px;
-  align-items: flex-start; /* 让子元素从顶部开始，不会跟随其他元素的高度 */
-  padding: 0 10px; /* 添加内边距 */
+  gap: 15px;
+  align-items: flex-start;
+  padding: 0 10px;
 }
 
-/* 中等屏幕布局调整 */
-@media screen and (min-width: 769px) and (max-width: 900px) {
-  #App {
-    gap: 15px !important; /* 减小间距 */
-    padding: 0 5px !important;
-  }
-}
-
-/* 统一左对齐类 */
-.left-aligned {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-
-.left-aligned * {
-  padding-left: 0;
-}
-
-/* 桌面版布局容器 */
-.desktop-main-content, .desktop-news-panel {
-  padding-left: 0;
-  margin-left: 0;
-}
-
-/* 移动设备特定类 */
-.mobile-section {
-  width: 100% !important;
-  max-width: 100% !important;
-  padding: 0 15px !important;
-  box-sizing: border-box !important;
-  margin-bottom: 10px !important; /* 进一步减小底部间距 */
-}
-
-/* 响应式布局 */
-@media screen and (max-width: 768px) {
-  #App {
-    flex-direction: column !important; /* 在小屏幕上改为垂直排列 */
-    width: 100% !important;
-    max-width: 100% !important;
-    gap: 0 !important; /* 减小组件间距 */
-    align-items: center !important; /* 居中对齐 */
-    padding: 0 !important; /* 移除内边距 */
-  }
-  
-  #mobile-profile {
-    order: 1 !important; /* 设置排序顺序 - 个人资料部分 */
-  }
-  
-  #mobile-news {
-    order: 2 !important; /* 设置排序顺序 - 新闻面板放在中间 */
-    width: 100% !important;
-    padding: 0 15px !important;
-    margin: 15px 0 !important; /* 进一步减少间距 */
-  }
-  
-  #mobile-publication {
-    order: 3 !important; /* 设置排序顺序 - 出版物部分 */
-  }
-  
-  #news-panel {
-    min-height: auto !important;
-    width: 100% !important;
-  }
-}
-
-/* 确保News和Publication左对齐 */
-#news-panel, #publication-section, .publication-item, .news-item {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-
-/* 调整Publication部分间距，使整体布局更紧凑 */
-#publication-section {
-  margin-top: 10px; /* 减少顶部间距 */
-  padding-left: 0;
-}
-
+/* ======================
+   通用文本样式
+====================== */
 .text {
-  flex: 1; /* 让文本占据剩余空间 */
+  flex: 1;
   font-size: 16px;
   line-height: 1.2;
 }
@@ -118,7 +47,79 @@ body {
 
 .title {
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: bold;
-  padding-left: 0 !important; /* 确保标题左对齐 */
+  padding-left: 0;
+}
+
+/* ======================
+   内容容器通用左对齐规则
+====================== */
+.left-aligned, 
+#news-panel, 
+#publication-section, 
+.publication-item, 
+.news-item,
+.title {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* ======================
+   桌面版容器
+====================== */
+.desktop-main-content, 
+.desktop-news-panel {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#publication-section {
+  margin-top: 5px;
+}
+
+/* ======================
+   移动设备布局 (≤ 900px)
+====================== */
+@media screen and (max-width: 900px) {
+  /* 主容器样式 */
+  #App {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 0;
+    align-items: center;
+    padding: 0;
+  }
+  
+  /* 移动设备通用部分样式 */
+  .mobile-section {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+  }
+  
+  /* 移动设备各部分顺序 */
+  #mobile-profile {
+    order: 1; /* 个人资料部分 */
+  }
+  
+  #mobile-news {
+    order: 2; /* 新闻面板放在中间 */
+    width: 100%;
+    padding: 0 15px;
+    margin: 10px 0;
+  }
+  
+  #mobile-publication {
+    order: 3; /* 出版物部分 */
+  }
+  
+  /* 移动设备News面板 */
+  #news-panel {
+    min-height: auto;
+    width: 100%;
+  }
 }

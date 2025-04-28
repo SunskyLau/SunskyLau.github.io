@@ -1,3 +1,6 @@
+/* ======================
+   导航面板
+====================== */
 #navigation-panel {
   width: 100%;
   height: 50px;
@@ -10,7 +13,23 @@
   flex-wrap: wrap;        /* 允许在小屏幕上换行 */
 }
 
-/* 响应式布局 */
+/* ======================
+   导航项目
+====================== */
+.nav-item {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;        /* 鼠标悬停时显示手型 */
+  transition: color 0.3s; /* 添加颜色过渡效果 */
+}
+
+.nav-item:hover {
+  color: #666;           /* 鼠标悬停时改变颜色 */
+}
+
+/* ======================
+   移动设备布局 (≤ 768px)
+====================== */
 @media screen and (max-width: 768px) {
   #navigation-panel {
     height: auto;         /* 高度自适应内容 */
@@ -21,15 +40,4 @@
   .nav-item {
     font-size: 16px;     /* 减小字体大小 */
   }
-}
-
-.nav-item {
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;        /* 鼠标悬停时显示手型 */
-  transition: color 0.3s; /* 添加颜色过渡效果 */
-}
-
-.nav-item:hover {
-  color: #666;           /* 鼠标悬停时改变颜色 */
 }
