@@ -6,7 +6,6 @@
   width: 100%;
   height: auto;
   flex-shrink: 0;
-  min-height: 100vh;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -18,10 +17,6 @@
   margin: 0 0 12px 0;
 }
 
-.news-list {
-  margin-top: 8px;
-}
-
 /* ======================
    移动设备布局 (≤ 1000px)
 ====================== */
@@ -29,26 +24,24 @@
   /* 新闻面板 */
   #news-panel {
     width: 100%;
-    min-height: auto;
     margin: 0;
     box-sizing: border-box;
   }
-  
+
   /* 标题 */
   #news-panel .title {
     display: block;
-    margin-bottom: 15px;
     text-align: left;
     width: 100%;
     font-size: 24px;
   }
-  
+
   /* 新闻条目和列表 */
   .news-item {
     width: 100%;
     margin-bottom: 15px;
   }
-  
+
   .news-list {
     width: 100%;
   }

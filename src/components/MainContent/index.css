@@ -3,7 +3,6 @@
 ====================== */
 #main-content {
   /* background-color: aqua; */
-  min-height: 100vh; /* 最小高度为视口高度 */
   position: relative;
   flex-shrink: 0; /* 防止压缩 */
   padding: 0;
@@ -16,10 +15,10 @@
 #profile-container {
   display: flex;
   flex-direction: row;
-  gap: 5px; /* 减少元素之间的间距 */
+  gap: 10px; /* 减少元素之间的间距 */
   align-items: flex-start; /* 从顶部对齐 */
   flex-wrap: wrap; /* 在小屏幕上允许换行 */
-  margin-bottom: 5px; /* 进一步减小底部间距，使布局更紧凑 */
+  margin-bottom: 20px; /* 进一步减小底部间距，使布局更紧凑 */
 }
 
 /* ======================
@@ -43,12 +42,23 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .publication-info {
   flex: 1; /* 让文本占据剩余空间 */
   font-size: 14px;
   line-height: 1.2;
+}
+
+#publication-container {
+  margin-top: 20px;
+}
+
+.teaser img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ======================
@@ -59,7 +69,6 @@
   #main-content {
     width: 100%;
     max-width: 100%;
-    min-height: auto;
     padding: 0;
     margin-top: 5px;
   }
@@ -69,19 +78,19 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0;
+    margin: 0 0 15px 0;
     padding: 0;
   }
 
   /* 个人资料文本 */
   #profile-container .text {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 
   /* 头像样式 */
   #avatar {
-    margin: 3px auto 8px auto;
+    margin: 0 auto 15px auto;
     display: block;
   }
 
@@ -89,5 +98,11 @@
   .publication-item {
     flex-direction: column;
     width: 100%;
+    gap: 10px;
+  }
+  
+  .teaser {
+    text-align: center;
+    margin-bottom: 10px;
   }
 }

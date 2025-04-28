@@ -14,6 +14,7 @@ body {
   background-color: #f5f5f5;
   width: 100%;
   overflow-x: hidden;
+  padding-top: 50px; /* 为固定导航栏预留空间 */
 }
 
 /* ======================
@@ -23,6 +24,15 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(245, 245, 245, 0.95); /* 半透明背景 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  backdrop-filter: blur(5px); /* 背景模糊效果，增强可读性 */
+  -webkit-backdrop-filter: blur(5px); /* Safari 支持 */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* 微妙的边框 */
 }
 
 /* ======================
@@ -37,6 +47,7 @@ body {
   gap: 15px;
   align-items: flex-start;
   padding: 0 20px; /* 统一所有设备的左右空白 */
+  margin-top: 20px; /* 页面顶部间距 */
 }
 
 /* 内容区域比例 */
@@ -78,25 +89,25 @@ body {
     gap: 0;
     align-items: center;
     padding: 0 20px; /* 与桌面版保持一致的左右空白 */
+    margin-top: 15px; /* 为固定导航栏留出空间 */
   }
   
   /* 直接组件样式 */
   #App > * {
     width: 100%;
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     flex: auto; /* 重置flex比例 */
   }
   
   /* 移动设备下News面板特有样式 */
   #news-panel {
-    min-height: auto;
     width: 100%;
     margin: 10px 0;
   }
   
   /* 出版物组件在移动设备下的样式 */
   #App > :nth-child(3) {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }

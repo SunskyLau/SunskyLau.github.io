@@ -27,7 +27,7 @@ function NewsPanel() {
       <div className="news-list">
         {newsItems.map((item, index) => (
           <div className="news-item" key={index}>
-            <div className="date">{item.date}</div>
+            <div className="date"><i>{item.date}</i></div>
             <div className="text">{item.text}</div>
           </div>
         ))}
