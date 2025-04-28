@@ -31,15 +31,6 @@
   background-color: #ddd;
   flex-shrink: 0; /* 防止头像被压缩 */
   max-width: 100%; /* 确保不超出容器 */
-  margin-top: 0; /* 移除顶部边距 */
-}
-
-/* 紧凑型头像样式 */
-.compact-avatar {
-  margin: 0;
-  padding: 0;
-  width: 160px;
-  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +70,6 @@
     max-width: 100vw;
     min-height: auto;
     padding: 0;
-    box-sizing: border-box;
     margin-top: 5px;
   }
   
@@ -101,12 +91,6 @@
   /* 头像样式 */
   #avatar {
     margin: 3px auto 8px auto;
-    display: block;
-  }
-  
-  /* 移动设备头像 */
-  .mobile-avatar {
-    margin: 2px auto;
     display: block;
   }
   

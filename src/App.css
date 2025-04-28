@@ -49,33 +49,6 @@ body {
   font-size: 20px;
   font-family: Arial, sans-serif;
   font-weight: bold;
-  padding-left: 0;
-}
-
-/* ======================
-   内容容器通用左对齐规则
-====================== */
-.left-aligned, 
-#news-panel, 
-#publication-section, 
-.publication-item, 
-.news-item,
-.title {
-  padding-left: 0;
-  margin-left: 0;
-}
-
-/* ======================
-   桌面版容器
-====================== */
-.desktop-main-content, 
-.desktop-news-panel {
-  padding-left: 0;
-  margin-left: 0;
-}
-
-#publication-section {
-  margin-top: 5px;
 }
 
 /* ======================
@@ -86,40 +59,27 @@ body {
   #App {
     flex-direction: column;
     width: 100%;
-    max-width: 100%;
     gap: 0;
     align-items: center;
     padding: 0;
   }
   
-  /* 移动设备通用部分样式 */
-  .mobile-section {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
-    margin-bottom: 6px;
-  }
-  
-  /* 移动设备各部分顺序 */
-  #mobile-profile {
-    order: 1; /* 个人资料部分 */
-  }
-  
-  #mobile-news {
-    order: 2; /* 新闻面板放在中间 */
+  /* 直接组件样式 */
+  #App > * {
     width: 100%;
     padding: 0 15px;
-    margin: 10px 0;
+    margin-bottom: 10px;
   }
   
-  #mobile-publication {
-    order: 3; /* 出版物部分 */
-  }
-  
-  /* 移动设备News面板 */
+  /* 移动设备下News面板特有样式 */
   #news-panel {
     min-height: auto;
     width: 100%;
+    margin: 10px 0;
+  }
+  
+  /* 出版物组件在移动设备下的样式 */
+  #App > :nth-child(3) {
+    margin-bottom: 15px;
   }
 }

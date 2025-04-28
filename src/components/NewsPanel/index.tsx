@@ -1,29 +1,10 @@
 import "./index.css";
-import { useEffect, useState } from "react";
 
 /**
  * 新闻面板组件
- * 显示动态新闻信息，并根据屏幕大小调整样式
+ * 显示动态新闻信息
  */
 function NewsPanel() {
-  // 设备类型状态
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
-
-  // 监听窗口大小变化
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1000);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  // 设置合适的类名
-  const getPanelClassName = () => {
-    return isMobile ? "news-panel-mobile" : "";
-  };
-
   // 新闻项数据
   const newsItems = [
     {
@@ -41,7 +22,7 @@ function NewsPanel() {
   ];
 
   return (
-    <div id="news-panel" className={getPanelClassName()}>
+    <div id="news-panel">
       <span className="title">News🔥</span>
       <div className="news-list">
         {newsItems.map((item, index) => (

@@ -28,39 +28,21 @@ export default function App() {
     <>
       {/* 导航面板在任何视图中都位于顶部 */}
       <NavigationPanel />
-      
+
       {/* 主应用容器 */}
       <div id="App">
         {isMobile ? (
           // 移动设备布局 - 垂直排列各部分
           <>
-            {/* 个人资料部分 */}
-            <div id="mobile-profile" className="mobile-section left-aligned">
-              <Profile />
-            </div>
-            
-            {/* 新闻面板部分 */}
-            <div id="mobile-news" className="mobile-section left-aligned">
-              <NewsPanel />
-            </div>
-            
-            {/* 出版物部分 */}
-            <div id="mobile-publication" className="mobile-section left-aligned">
-              <Publication />
-            </div>
+            <Profile />
+            <NewsPanel />
+            <Publication />
           </>
         ) : (
           // 桌面布局 - 水平排列各部分
           <>
-            {/* 主内容区域(包含个人资料和出版物) */}
-            <div className="desktop-main-content left-aligned">
-              <MainContent />
-            </div>
-            
-            {/* 新闻面板 */}
-            <div className="desktop-news-panel left-aligned">
-              <NewsPanel />
-            </div>
+            <MainContent />
+            <NewsPanel />
           </>
         )}
       </div>
