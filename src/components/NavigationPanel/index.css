@@ -6,6 +6,21 @@
   justify-content: center;  /* 水平居中 */
   align-items: center;     /* 垂直居中 */
   gap: 40px;              /* 两个项目之间的间距 */
+  padding: 0 10px;        /* 添加内边距 */
+  flex-wrap: wrap;        /* 允许在小屏幕上换行 */
+}
+
+/* 响应式布局 */
+@media screen and (max-width: 768px) {
+  #navigation-panel {
+    height: auto;         /* 高度自适应内容 */
+    padding: 10px;       /* 增加内边距 */
+    gap: 20px;           /* 减小间距 */
+  }
+  
+  .nav-item {
+    font-size: 16px;     /* 减小字体大小 */
+  }
 }
 
 .nav-item {

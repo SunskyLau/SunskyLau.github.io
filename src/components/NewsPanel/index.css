@@ -1,13 +1,107 @@
 #news-panel {
   position: relative;
   /* background-color: black; */
-  width: 300px; /* 设置一个固定宽度 */
+  width: 250px; /* 减小宽度以适应窄屏幕 */
   height: auto; /* 高度由内容决定 */
   flex-shrink: 0;
   /* 防止压缩 */
   min-height: 100vh;
+  padding-left: 0; /* 移除左侧内边距以对齐 */
+  padding-right: 0; /* 移除右侧内边距 */
+  margin-left: 0; /* 确保没有左边距 */
+  overflow-wrap: break-word; /* 确保文本可以换行 */
+  word-wrap: break-word;
+}
+
+.news-panel-mobile {
+  width: 100% !important;
+  min-height: auto !important;
+  /* padding: 10px 15px !important; */
+  box-sizing: border-box !important;
+}
+
+.news-panel-tablet {
+  width: 220px !important;
+  padding-left: 0 !important; /* 移除左侧内边距以对齐 */
+  padding-right: 10px !important;
+  margin-left: 0 !important; /* 确保没有左边距 */
+}
+
+/* 中等屏幕布局 - 针对宽度850px左右的情况 */
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  #news-panel {
+    width: 220px !important; /* 在中等屏幕上进一步减小宽度 */
+    padding-left: 0 !important; /* 移除左侧内边距以对齐 */
+    padding-right: 10px !important;
+    margin-left: 0 !important; /* 确保没有左边距 */
+  }
+  
+  #news-panel .title {
+    font-size: 18px !important;
+    padding-left: 0 !important; /* 确保标题也左对齐 */
+  }
+  
+  .news-item .text {
+    font-size: 14px !important;
+  }
+  
+  .date {
+    font-size: 12px !important;
+  }
+  
+  .news-panel-tablet .news-item {
+    margin-bottom: 12px !important;
+    padding-left: 0 !important; /* 确保新闻条目左对齐 */
+  }
+  
+  .news-panel-tablet .title {
+    font-size: 18px !important;
+    margin-bottom: 10px !important;
+    padding-left: 0 !important; /* 确保标题左对齐 */
+  }
+}
+
+/* 响应式布局 */
+@media screen and (max-width: 768px) {
+  #news-panel {
+    width: 100% !important; /* 在移动设备上占满宽度 */
+    min-height: auto !important; /* 移除最小高度限制 */
+    margin: 0 !important; /* 重置margin */
+    /* padding: 10px 15px !important;  */
+    /* 添加内边距 */
+    box-sizing: border-box !important;
+  }
+  
+  #news-panel .title {
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+    font-size: 24px;
+  }
+  
+  .news-item {
+    width: 100%;
+    margin-bottom: 15px; /* 减少间距 */
+    padding-left: 0 !important; /* 确保新闻条目左对齐 */
+  }
+  
+  .news-list {
+    width: 100%;
+    padding-left: 0 !important; /* 确保新闻列表左对齐 */
+  }
 }
 
 .news-item {
-  margin: 0 0 15px 0;
+  margin: 0 0 12px 0; /* 减少条目间距 */
+  padding-left: 0; /* 确保左对齐 */
+}
+
+.news-list {
+  margin-top: 8px; /* 减少顶部间距 */
+  padding-left: 0; /* 确保左对齐 */
+}
+
+.title {
+  padding-left: 0; /* 确保标题左对齐 */
 }
