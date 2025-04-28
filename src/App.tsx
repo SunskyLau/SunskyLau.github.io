@@ -27,7 +27,9 @@ export default function App() {
   return (
     <>
       {/* 导航面板在任何视图中都位于顶部 */}
-      <NavigationPanel />
+      <div className="nav-container">
+        <NavigationPanel />
+      </div>
 
       {/* 主应用容器 */}
       <div id="App">

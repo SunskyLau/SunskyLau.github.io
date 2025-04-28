@@ -9,8 +9,10 @@
   justify-content: center;  /* 水平居中 */
   align-items: center;     /* 垂直居中 */
   gap: 40px;              /* 两个项目之间的间距 */
-  padding: 0 10px;        /* 添加内边距 */
+  padding: 0 20px;        /* 与App容器保持一致的左右空白 */
   flex-wrap: wrap;        /* 允许在小屏幕上换行 */
+  max-width: 1200px;      /* 与App容器保持一致的最大宽度 */
+  margin: 0 auto;          /* 水平居中 */
 }
 
 /* ======================
@@ -28,12 +30,12 @@
 }
 
 /* ======================
-   移动设备布局 (≤ 768px)
+   移动设备布局 (≤ 1000px)
 ====================== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   #navigation-panel {
     height: auto;         /* 高度自适应内容 */
-    padding: 10px;       /* 增加内边距 */
+    padding: 10px 20px;   /* 保持左右空白一致 */
     gap: 20px;           /* 减小间距 */
   }
   
