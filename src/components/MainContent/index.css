@@ -37,15 +37,6 @@
 }
 
 /* ======================
-   标题样式
-====================== */
-#homepage-title {
-  padding: 0 4px;
-  font-family: Arial, sans-serif;
-  font-size: 24px;
-}
-
-/* ======================
    出版物样式
 ====================== */
 .publication-item {
@@ -72,7 +63,7 @@
     padding: 0;
     margin-top: 5px;
   }
-  
+
   /* 个人资料容器 */
   #profile-container {
     flex-direction: column;
@@ -81,19 +72,19 @@
     margin: 0;
     padding: 0;
   }
-  
+
   /* 个人资料文本 */
   #profile-container .text {
     width: 100%;
     margin-bottom: 5px;
   }
-  
+
   /* 头像样式 */
   #avatar {
     margin: 3px auto 8px auto;
     display: block;
   }
-  
+
   /* 出版物样式 */
   .publication-item {
     flex-direction: column;
