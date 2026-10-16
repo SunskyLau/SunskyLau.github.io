@@ -28,4 +28,4 @@ latest_posts:
 
 👋 Hi! I'm Yangtian Liu (刘阳天). I'm currently a 3rd-year PhD student in the Interactive Data Group [(ZJUIDG)](https://zjuidg.org/), Zhejiang University [(ZJU)](https://www.zju.edu.cn/), under the joint supervision of Prof. [Yingcai Wu](http://www.ycwu.org/) and Prof. [Di Weng](https://dwe.ng/en/about/). Before that, I received my bachelor's degree in Computer Science and Technology in 2023 from Hunan University [(HNU)](https://www.hnu.edu.cn/).
 
-My research interests mainly focus on interactive data science and LLM agents.
+My research interests mainly focus on interactive data analytics and LLM agents.
