@@ -18,6 +18,12 @@ pagination:
 
 <div class="post">
 
+{% if site.posts.size == 0 %}
+
+<h1>blog</h1>
+<p>Blog posts will be added here.</p>
+{% endif %}
+
 {% assign blog_name_size = site.blog_name | size %}
 {% assign blog_description_size = site.blog_description | size %}
 

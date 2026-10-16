@@ -1,14 +1,6 @@
-github_users:
-  - torvalds
-  - alshedivat
-
+# add your own GitHub users and repos, e.g.
+# github_users:
+#   - your-username
+# github_repos:
+#   - your-username/your-repo
 repo_description_lines_max: 2
-
-github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
