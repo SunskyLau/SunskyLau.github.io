@@ -11,6 +11,7 @@ profile:
   more_info: >
     <p>Interactive Data Group (ZJUIDG)</p>
     <p>Zhejiang University</p>
+    <p>Email: yt-liu@zju.edu.cn</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
